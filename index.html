@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/output.css" />
+    <link rel="shortcut icon" type="imagex/png" href="./assets/logo.ico"/>
+    <title>Burguer Dev - Os melhores Devs comem aqui</title>
+</head>
+
+<body>
+    <!--npm run dev para carregar o tailwind-->
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img src="./assets/hamb-0.png" alt="Logo DevBur/guer"
+                class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200" />
+            <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Dev Burguer</h1>
+
+            <span class="text-white font-medium">Rua Cobol 20, Caldas Novas - GO</span>
+
+            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="text-white font-medium">Seg á Dom - 18:00 as 23:00hrs</span>
+            </div>
+
+        </div>
+    </header>
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+        Conheça nosso cardápio
+    </h2>
+
+    <div id="menu">
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+            <div class="flex gap-2">
+                <img src="./assets/hamb-1.png" alt="Hamburguer Node"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div>
+                    <p class="font-bold">Node Burguer</p>
+                    <p class="text-sm">O hambúrguer "Node" é uma explosão de sabores: carne suculenta, queijo
+                        derretido, alface crocante e molho especial.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 18.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Node Burguer"
+                            data-price="18.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/hamb-2.png" alt="Hamburguer PHP"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div>
+                    <p class="font-bold">PHP Burguer</p>
+                    <p class="text-sm">Este hambúrguer é uma ode à indulgência: duas carnes suculentas, bacon crocante,
+                        queijo cheddar derretido e um molho especial, tudo em harmonia para uma experiência gastronômica
+                        excepcional.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 31.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="PHP Burguer"
+                            data-price="31.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex gap-2">
+                <img src="./assets/hamb-3.png" alt="Hamburguer Cobol"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div>
+                    <p class="font-bold">Cobol Burguer</p>
+                    <p class="text-sm">O hambúrguer Cobol apresenta duas generosas carnes, queijo cheddar cremoso e uma
+                        maionese especial que complementa perfeitamente, garantindo uma explosão de sabor em cada
+                        mordida.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 28.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Cobol Burguer"
+                            data-price="28.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/hamb-4.png" alt="Hamburguer Scratch"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div>
+                    <p class="font-bold">Scratch Burguer</p>
+                    <p class="text-sm">O hambúrguer Scratch combina frango empanado crocante com uma abundância de salada
+                        fresca, criando uma fusão deliciosa de texturas e sabores, ideal para os amantes de refeições
+                        leves e saborosas.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 19.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                            data-name="Scratch Burguer"
+                            data-price="19.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex gap-2">
+                <img src="./assets/hamb-7.png" alt="Hamburguer Ruby"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div>
+                    <p class="font-bold">Ruby Burguer</p>
+                    <p class="text-sm">O Ruby Burger apresenta um hambúrguer suculento com queijo cheddar derretido, bacon crocante e anéis de cebola fritos, harmonizando texturas e sabores irresistíveis em cada mordida.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 19.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                            data-name="Ruby Burguer"
+                            data-price="19.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div><div class="flex gap-2">
+                <img src="./assets/hamb-8.png" alt="Hamburguer Swift"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div>
+                    <p class="font-bold">Swift Burguer</p>
+                    <p class="text-sm">O Swift Vegan Burger oferece uma opção plant-based com uma variedade de saladas frescas, como alface crocante, tomate suculento e pepinos refrescantes, proporcionando um sabor leve e nutritivo.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 19.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                            data-name="Swift Burguer"
+                            data-price="19.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div><div class="flex gap-2">
+                <img src="./assets/hamb-6.png" alt="Hamburguer Python"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div>
+                    <p class="font-bold">Python Burguer</p>
+                    <p class="text-sm">O Python Burger é um clássico com carne suculenta, queijo derretido, bacon crocante e acompanhado de batatas fritas, garantindo uma experiência de sabor irresistível e reconfortante.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 19.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                            data-name="Python Burguer"
+                            data-price="19.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex gap-2">
+                <img src="./assets/hamb-5.png" alt="Hamburguer Java"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div>
+                    <p class="font-bold">Java Burguer</p>
+                    <p class="text-sm">O Java Burger mescla técnicas tradicionais com sabores contemporâneos, trazendo carne grelhada ao ponto, queijo defumado, ovo na chapa e molho especial, revitalizando um clássico com um toque moderno e delicioso..</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 19.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                            data-name="Java Burguer"
+                            data-price="19.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl">Bebidas</h2>
+        </div>
+        <div class="flex gap-2 w-full">
+            <img src="./assets/refri-1.png" alt="Coca lata"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+                <div class="w-full">
+                    <p class="font-bold">Coca lata</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 5.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Coca lata"
+                            data-price="5.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex gap-2 w-full py-7 pb-8">
+            <img src="./assets/refri-2.png" alt="Suco lata"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+                <div class="w-full">
+                    <p class="font-bold">Suco lata</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 5.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Suco lata"
+                            data-price="5.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+            id="cart-modal">
+            <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+                <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+
+                <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+                <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+                <p class="font-bold mt-4">Endereço de entrega: </p>
+                <input type="text" placeholder="Digite seu endereço completo... " id="address"
+                    class="w-full border-2 p-1 rounded my-1" />
+                <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo!</p>
+
+                <div class="flex items-center justify-between mt-5 w-full">
+                    <button id="close-modal-btn">Fechar</button>
+                    <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar
+                        pedido</button>
+                </div>
+
+            </div>
+        </div>
+        <div>
+
+        </div>
+
+        <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+            <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+                (<span id="cart-count">0</span>)
+                Veja meu carrinho
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+        </footer>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script src="./script.js"></script>
+</body>
+
+</html>
