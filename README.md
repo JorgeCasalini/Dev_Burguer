@@ -12,6 +12,6 @@ O **Soft_Burger** é um projeto desenvolvido com o objetivo de praticar funçõe
 
 ## Funcionalidades
 
-- **Seleção de Ingredientes**: O usuário pode escolher os ingredientes para montar seu hambúrguer, como pão, carne, queijo, vegetais e molhos.
 - **Visualização do Pedido**: Exibe uma visualização do pedido com os ingredientes selecionados.
 - **Cálculo do Preço**: O preço do pedido é atualizado dinamicamente à medida que os ingredientes são escolhidos.
+- **Monitora horário de funcionamento**: Bloqueia finalização de pedidos quando a hamburgueria está fechado.
